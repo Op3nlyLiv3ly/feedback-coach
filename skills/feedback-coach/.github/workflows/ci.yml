@@ -1,0 +1,16 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install deps
+      run: npm install
+      working-directory: skills/feedback-coach
+    - name: Run tests
+      run: npm test
+      working-directory: skills/feedback-coach
