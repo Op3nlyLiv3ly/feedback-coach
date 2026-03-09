@@ -1,0 +1,10 @@
+{
+  "feedback": {
+    "tone": "professional",
+    "maxSuggestions": 3
+  },
+  "server": {
+    "port": 9091,
+    "bind": "127.0.0.1"
+  }
+}
